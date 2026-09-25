@@ -4,57 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flow 11</title>
+
     <style>
         body{
-    margin: 0;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-    background-image: url("assets/8 Sem Título_20260925200234.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-image: url("assets/8 Sem Título_20260925200234.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
-        .logo {
-            width: 350px;}
+        .logo{
+            width: 350px;
+        }
 
-        header {
+        header{
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
         }
-        
 
-        ul {
+        ul{
             display: flex;
             gap: 30px;
             list-style: none;
-            font-size:30px}
-
-        a {
-            color: white;
-            text-decoration: none;
+            font-size: 30px;
         }
 
-        a:hover {
+        a{
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover{
             color: green;
             font-size: 35px;
-            transition: 0.3s;}
+        }
 
-        modes {
+        .modes{
             display: flex;
-            width:500px;
-            justify-content:center;}
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
 
-        classic:hover {
+        .classic{
+            width: 500px;
+            transition: 0.3s;
+        }
+
+        .classic:hover{
             width: 550px;
-            transition: 0.3s;}
-
-        
+        }
     </style>
 </head>
+
 <body>
+
     <header>
         <div class="logoname">
             <img class="logo" src="assets/flogo.png" alt="logo">
@@ -68,9 +78,10 @@
             </ul>
         </div>
     </header>
+
     <div class="modes">
-        <img class="classic" src="assets/classic.png">
+        <img class="classic" src="assets/classic.png" alt="Classic">
     </div>
-    
+
 </body>
 </html>
