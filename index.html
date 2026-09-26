@@ -1,84 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flow 11</title>
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Flow 11</title>  <style>  
+    body{  
+        margin: 0;  
+        min-height: 100vh;  
+        font-family: Arial, sans-serif;  
+        background-image: url("assets/8 Sem Título_20260925200234.png");  
+        background-size: cover;  
+        background-position: center;  
+        background-repeat: no-repeat;  
+    }  
 
-    <style>
-        body{
-            margin: 0;
-            min-height: 100vh;
-            font-family: Arial, sans-serif;
-            background-image: url("assets/8 Sem Título_20260925200234.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+    .logo{  
+        width: 350px;  
+    }  
 
-        .logo{
-            width: 350px;
-        }
+    header{  
+        display: flex;  
+        justify-content: space-between;  
+        align-items: center;  
+        padding: 10px 20px;  
+    }  
 
-        header{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
+    ul{  
+        display: flex;  
+        gap: 30px;  
+        list-style: none;  
+        font-size: 30px;  
+    }  
 
-        ul{
-            display: flex;
-            gap: 30px;
-            list-style: none;
-            font-size: 30px;
-        }
+    a{  
+        color: white;  
+        text-decoration: none;  
+        transition: 0.3s;  
+    }  
 
-        a{
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
-        }
+    a:hover{  
+        color: green;  
+        font-size: 35px;  
+    }  
 
-        a:hover{
-            color: green;
-        }
+    .modes{  
+        display: flex;  
+        justify-content: center;  
+        flex-direction: collumn;  
+        margin-top: 50px;  
+    }  
 
-        .modes{
-            display: flex;
-            justify-content: center;
-            align-itens: column;
-            gap: 20px;
-            margin-top: 50px;
-        }
+    .classic{  
+        width: 550px;  
+        transition: 0.3s;  
+    }  
 
-        .classic,
-        .draft,
-        .friendmode{
-            width: 550px;
-            max-width: 90%;
-            transition: transform 0.3s;
-            cursor: pointer;
-        }
+    .classic:hover{  
+        width: 600px;  
+    }  
 
-        .classic:hover,
-        .draft:hover,
-        .friendmode:hover{
-            transform: scale(1.1);
-        }
-    </style>
-</head>
+    .draft{  
+        width: 550px;  
+        transition: 0.3s;  
+    }  
 
-<body>
+    .draft:hover{  
+        width: 600px;  
+    }  
 
-    <header>
-        <div class="logoname">
-            <img class="logo" src="assets/flogo.png" alt="logo">
-        </div>
+    .friendmode{  
+        width: 550px;  
+        transition: 0.3s;  
+    }  
 
-        <div class="options">
-            <ul>
-                <li><a href="perfil.html"><strong>Perfil</strong></a></li>
-                <li><a href="ranking.html"><strong>Ranking</strong></a></li>
-                <li><a href="amigos.html"><strong>Amigos</strong></a></li>
-            </ul>
+    .friendmode:hover{  
+        width: 600px;  
+    }  
+</style>
+
+</head>  <body>  <header>  
+    <div class="logoname">  
+        <img class="logo" src="assets/flogo.png" alt="logo">  
+    </div>  
+
+    <div class="options">  
+        <ul>  
+            <li><a href="perfil.html"><strong>Perfil</strong></a></li>  
+            <li><a href="ranking.html"><strong>Ranking</strong></a></li>  
+            <li><a href="amigos.html"><strong>Amigos</strong></a></li>  
+        </ul>  
+    </div>  
+</header>  
+
+<div class="modes">  
+    <img class="classic" src="assets/classic.png" alt="Classic">  
+    <img class="draft" src="assets/draft.png" alt="Draft">  
+    <img class="friendmode" src="assets/friendmode.png" alt="Com Amigos">  
+</div>
+
+</body>  
+</html>
