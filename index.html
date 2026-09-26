@@ -42,41 +42,29 @@
 
         a:hover{
             color: green;
-            font-size: 35px;
         }
 
         .modes{
             display: flex;
-            justify-content: center;
-            flex-direction: collumn;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
             margin-top: 50px;
         }
 
-        .classic{
-            width: 550px;
-            transition: 0.3s;
-        }
-
-        .classic:hover{
-            width: 600px;
-        }
-
-        .draft{
-            width: 550px;
-            transition: 0.3s;
-        }
-
-        .draft:hover{
-            width: 600px;
-        }
-
+        .classic,
+        .draft,
         .friendmode{
             width: 550px;
-            transition: 0.3s;
+            max-width: 90%;
+            transition: transform 0.3s;
+            cursor: pointer;
         }
 
+        .classic:hover,
+        .draft:hover,
         .friendmode:hover{
-            width: 600px;
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -94,14 +82,3 @@
                 <li><a href="ranking.html"><strong>Ranking</strong></a></li>
                 <li><a href="amigos.html"><strong>Amigos</strong></a></li>
             </ul>
-        </div>
-    </header>
-
-    <div class="modes">
-        <img class="classic" src="assets/classic.png" alt="Classic">
-        <img class="draft" src="assets/draft.png" alt="Draft">
-        <img class="friendmode" src="assets/friendmode.png" alt="Com Amigos">
-    </div>
-
-</body>
-</html>
